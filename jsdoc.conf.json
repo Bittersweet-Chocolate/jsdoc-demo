@@ -4,13 +4,18 @@
         "dictionaries": ["jsdoc", "closure"]
     },
     "source": {
-        "include": ["src/index.js","src/view"],
+        "include": ["src/view/utils/dingtalk", "src/view/utils/h5", "src/view/utils/wx"],
         "includePattern": ".+\\.js(doc)?$",
         "excludePattern": "(^|\\/|\\\\)_"
     },
     "opts": {
         "encoding": "utf8",
-        "destination": "./out/",     
-        "recurse": true              
+        "destination": "./api_doc/",
+        "recurse": true,
+        "readme": "src/view/utils/api/reademe.md"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
     }
 }
